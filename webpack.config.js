@@ -1,25 +1,20 @@
 const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require('path')
 module.exports = {
-    entry: [
-        'webpack/hot/dev-server',
-        './src/index',
-    ],
+    entry: './src/index',
     output: {
-        filename: "index.js",
+			path: path.resolve(__dirname, '.'),
+      filename: "index.js",
     },
     resolve: {
-        extensions: [".tsx", ".ts", ".js", ".jpg", ".png"],
+        extensions: [".tsx", ".ts", ".js", ".jpg", ".png",".svg"],
     },
-    plugins: [
-			new HtmlWebpackPlugin(),
-			new webpack.NamedModulesPlugin(),
-    ],
+
     module: {
         rules: [
             {
 							test: /\.tsx?$/,
-							use: ['babel-loader', 'awesome-typescript-loader'],
+							use: 'awesome-typescript-loader',
 						},
             {
                 test: /\.css$/,
@@ -29,14 +24,11 @@ module.exports = {
                 ],
             },
             {
-							test: /\.(jpg|png|svg)$/,
-							loader: "url-loader",
-					},
+								test: /\.(jpe?g|png|gif)$/,
+                loader: 'url-loader?limit=10000'
+            },
         ],
     },
-    devServer: {
-        hot: true,
-        inline: true,
-    },
-    devtool: "eval",
+
+    devtool: "inline-source-map",
 };

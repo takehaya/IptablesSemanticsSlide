@@ -4,40 +4,31 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:dev": "webpack-dev-server"
   },
   "author": "TakeruHayasaka",
   "license": "MIT",
   "dependencies": {
+    "@types/node": "^8.0.17",
+    "@types/react": "^15.0.39",
+    "@types/react-dom": "^15.5.1",
+    "@types/react-hot-loader": "^3.0.3",
     "@types/spectacle": "^1.1.6",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-github-fork-ribbon": "^0.5.1",
-    "spectacle": "^4.0.5",
-    "spectacle-image-slide": "^1.0.1",
-    "spectacle-theme-solarized-light": "^1.0.0"
+    "@types/webpack-env": "^1.13.0",
+    "awesome-typescript-loader": "^3.2.2",
+    "raw-loader": "^0.5.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-github-fork-ribbon": "^0.5.0",
+    "spectacle": "^2.1.1",
+    "spectacle-theme-solarized-light": "https://github.com/youxkei/spectacle-theme-solarized-light.git#cd7374e",
+    "style-loader": "^0.18.2",
+    "typescript": "^2.4.2",
+    "url-loader": "^0.5.9",
+    "webpack": "^3.4.1"
   },
   "devDependencies": {
-    "@types/node": "^9.4.6",
-    "@types/react": "^16.0.40",
-    "@types/react-dom": "^16.0.4",
-    "@types/react-hot-loader": "^3.0.6",
-    "@types/webpack-env": "^1.13.5",
-    "awesome-typescript-loader": "^3.5.0",
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.3",
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-react": "^6.24.1",
-    "html-webpack-plugin": "^3.0.4",
-    "raw-loader": "^0.5.1",
-    "react-hot-loader": "next",
-    "style-loader": "^0.20.2",
-    "ts-loader": "^4.0.1",
-    "typescript": "^2.7.2",
-    "url-loader": "^1.0.1",
-    "webpack": "^4.1.0",
-    "webpack-cli": "^2.0.10",
-    "webpack-dev-server": "^3.1.0"
+    "file-loader": "^1.1.11",
+    "webpack-cli": "^2.0.10"
   }
 }
