@@ -46,9 +46,9 @@ const Footer = () => (
                 fontFamily: "monospace",
                 textDecoration: "initial",
             }}
-            href="//git.io/v7ZUX"
+            href="https://goo.gl/38JFiv"
         >
-            git.io/v7ZUX
+            goo.gl/38JFiv
         </a>
     </div>
 );
@@ -310,7 +310,7 @@ export default () => (
                 ])
             }
         </Deck>
-        <GithubForkRibbon href="https://github.com/youxkei/devenv-slide/" color="orange">Fork me on Github</GithubForkRibbon>
+        <GithubForkRibbon href="https://github.com/takehaya/IptablesSemanticsSlide" color="orange">Fork me on Github</GithubForkRibbon>
         <Footer />
     </div>
 );
